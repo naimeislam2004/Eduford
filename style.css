@@ -135,3 +135,22 @@ nav img{
         
     }
 }
+
+/* course section start */
+.course-section{
+    margin-top: 100px;
+    text-align: center;
+}
+.course-section h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.course-section p{
+    color: #666;
+}
+.course-row{
+    display: flex;
+}
+.course-box{
+    background-color: navy;
+}
