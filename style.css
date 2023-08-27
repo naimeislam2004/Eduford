@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* header section style start */
 header{
     width: 100%;
     min-height: 100vh;
@@ -91,8 +92,10 @@ nav img{
 .fa-xmark{
     display: none;
 }
+/* header section style end */
 
-@media (max-width: 414px){
+/* header section responsive style start */
+@media (max-width: 600px){
     .container{
         width: 90%;
     }
@@ -135,11 +138,13 @@ nav img{
         
     }
 }
+/* header section responsive style end */
 
-/* course section start */
+/* course section style start */
 .course-section{
     margin-top: 100px;
     text-align: center;
+    margin-bottom: 100px;
 }
 .course-section h2{
     font-size: 30px;
@@ -150,7 +155,90 @@ nav img{
 }
 .course-row{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .course-box{
-    background-color: navy;
+    width: 30%;
+    background-color: #f9ecf3;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 22px 16px;
+    box-shadow: 0px 0px 20px 4px #dddadb;
+}
+.course-box:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+.course-box h3{
+    margin-bottom: 10px;
+}
+/* coruse section style end */
+
+/* course section responsive style start */
+@media (max-width: 600px){
+    .course-row{
+        flex-direction: column;
+    }
+    .course-box{
+        width: 100%;
+    }
+    .course-box:hover{
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    }
+}
+
+/* course section responsive style start */
+.campus-section{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.campus-section h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.campus-section p{
+    color: #666;
+}
+.campus-row{
+    display: flex;
+    flex-direction: row;
+}
+.campus-box{
+    width: 30%;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.campus-box img{
+    width: 100%;
+}
+.hover-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230,0,0,0.7);
+    display: none;
+    transition: 0.5s;
+}
+.hover-text:hover{
+    display: block;
+    top: 0;
+}
+.hover-text h3{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+.hover-text p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
 }
