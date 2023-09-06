@@ -29,7 +29,7 @@ nav img{
     width: 150px;
 }
 .fa-bars{
-        display: none;
+    display: none;
 }
 .nav-links{
     flex: 1;
@@ -84,6 +84,7 @@ nav img{
     padding: 12px 34px;
     background-color: transparent;
     transition: 0.5s;
+    border-radius: 10px;
 }
 .hero-btn:hover{
     background-color: #e23719;
@@ -108,7 +109,7 @@ nav img{
         color: #ffffff;
     }
     .nav-links{
-        display: block;
+        display: none;
         z-index: 1;
         background-color: #e23719;
         position: absolute;
@@ -285,7 +286,6 @@ nav img{
 .facilities-section{
     margin-top: 100px;
     text-align: center;
-    margin-bottom: 100px;
 }
 .facilities-section h2{
     font-size: 30px;
@@ -381,7 +381,7 @@ nav img{
 .testimonials-layer p{
     font-size: 14px;
     color: #666;
-    height: 70%;
+    height: 50%;
 }
 .testimonials-layer h3{
     font-weight: 400;
@@ -408,5 +408,122 @@ nav img{
     .testimonials-layer p{
         height: auto;
     }
+    .testimonials-section h2{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
 }
 /* testimonials section responsive style end */
+
+/* contact us section style start */
+.contact-us{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),url("./images/banner2.jpg"));
+}
+.contact-us{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./images/banner2.jpg");
+    min-height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.course-center{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.course-enroll{
+    text-align: center;
+    color: #fff;
+}
+.course-enroll h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+/* contact us section style end */
+
+/* contact us responsive style start */
+@media (max-width: 600px){
+    .course-enroll h2{
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+}
+/* contact us responsive style start end */
+
+/* footer section style start */
+.about-us{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.about-us h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.about-us p{
+    color: #666;
+    font-size: 14px;
+}
+.social-icons{
+    margin: 40px 0px;
+}
+.social-icons i{
+    font-size: 30px;
+    padding: 0px 20px;
+    color: #666;
+}
+.social-icons .fa-facebook:hover{
+    color: #3b5998;
+}
+.social-icons .fa-twitter:hover{
+    color: #00acee;
+}
+.social-icons .fa-instagram:hover{
+    color: #C13584;
+}
+.social-icons .fa-linkedin:hover{
+    color: #0a66c2;
+}
+@media (max-width: 600px){
+    .social-icons i{
+        font-size: 25px;
+        padding: 0px 10px;
+    }
+}
+footer > i{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 40px;
+    z-index: 3;
+}
+footer > a{
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+    background-color: #e23719;
+    border-radius: 50%;
+    width: 50px;
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    z-index: 3;
+}
+@media (max-width: 600px){
+    footer > i{
+        top: 25px;
+        font-size: 20px;
+        right: 50px;
+    }
+}
+/* footer section style end */
