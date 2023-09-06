@@ -15,9 +15,9 @@
         <section class="container">
             <nav>
                 <a href="index.html"><img src="./images/logo.png" alt="Eduford-Logo"></a>
-                <i class="fa-solid fa-bars"></i>
+                <i onclick="showBar()" class="fa-solid fa-bars"></i>
                 <section class="nav-links">
-                    <i class="fa-solid fa-xmark"></i>
+                    <i onclick="hideBar()" class="fa-solid fa-xmark"></i>
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -173,13 +173,56 @@
 
                 </section>
             </section>
-
             <!-- Testimonials section end -->
-            <!-- footer section -->
-
         </section>
-    </main>
 
+        <!-- contact us section start -->
+        <section class="contact-us">
+            <section class="container course-center">
+                <section class="course-enroll">
+                    <h2>Enroll For Our Various Online Courses</h2>
+                    <h2>Anywhere from the World</h2>
+                    <a href="#" class="hero-btn">Contact Us</a>
+                </section>
+            </section>
+        </section>            
+        <!-- contact us section end -->
+
+    </main>
     <!-- main section end -->
+
+    <footer>
+        <section class="container">
+            <section class="about-us">
+                <h2>About US</h2>
+                <p>We’re a leading research university with a heart. Founded in the decade that the U.S. Constitution was signed, we’re the nation’s oldest Catholic and Jesuit university. We’re a community of people who bridge our disparate experiences and identities. Meet the people and places that make Eduford home.</p>
+                <section class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </section>
+                <p>Copyright &copy; 2023 Eduford University</p>
+            </section>
+        </section>
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+        <i class="fa-solid fa-circle-half-stroke"></i>
+    </footer>
+
+<!-- javaScript section start -->
+<script>
+
+function showBar(){
+    document.getElementsByClassName('nav-links')[0].style.display = 'block';
+}
+function hideBar(){
+    document.getElementsByClassName("nav-links")[0].style.display = 'none';
+}
+
+
+
+
+</script>
+
 </body>
 </html>
